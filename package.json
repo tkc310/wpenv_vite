@@ -23,6 +23,7 @@
     "_prettier:fix": "prettier --write \"**/*.{html,scss,ts,js}\" --ignore-path .prettierignore"
   },
   "devDependencies": {
+    "@prettier/plugin-php": "0.22.2",
     "@typescript-eslint/eslint-plugin": "8.14.0",
     "@typescript-eslint/parser": "8.14.0",
     "@wordpress/env": "10.12.0",
