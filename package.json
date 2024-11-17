@@ -1,0 +1,16 @@
+{
+  "name": "wpenv_vite",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "22.11.0",
+    "npm": "10.9.x"
+  },
+  "scripts": {
+    "wp:start": "wp-env start",
+    "wp:stop": "wp-env stop"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.12.0"
+  }
+}
