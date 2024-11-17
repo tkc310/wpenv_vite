@@ -1,0 +1,23 @@
+pre-push:
+  parallel: true
+  commands:
+    lint:
+      glob: '*.{ts,js}'
+      run: npm run tsc && npm run lint
+    lint:style:
+      # phpはlintしてない
+      glob: '*.{scss,css}'
+      run: npm run lint:style
+
+pre-commit:
+  parallel: true
+  commands:
+    lint:fix:
+      glob: '*.{ts,js}'
+      run: npm run lint:fix {staged_files}
+    lint:style:fix:
+      glob: '*.{scss,css}'
+      run: npm run lint:style:fix {staged_files}
+    prettier:
+      glob: '*.{html,scss,ts,js,php}'
+      run: npm run prettier {staged_files}
