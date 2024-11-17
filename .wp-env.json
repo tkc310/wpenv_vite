@@ -1,12 +1,19 @@
 {
   "core": "https://wordpress.org/wordpress-6.7.zip",
-  "config": {
-    "WP_DEBUG": true
+  "port": 8888,
+  "env": {
+    "tests": {
+        "port": 8889
+    }
   },
-  "themes":["."],
+  "config": {
+    "IS_DEVELOP": true
+  },
+  "themes":[],
   "mappings": {
     "wp-content/uploads": "./wordpress/uploads",
     "wp-content/themes": "./wordpress/themes",
-    "wp-content/plugins": "./wordpress/plugins"    
+    "wp-content/plugins": "./wordpress/plugins",
+    "sql": "./wordpress/sql"    
   }
 }

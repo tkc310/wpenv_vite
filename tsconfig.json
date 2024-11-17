@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".src/",
+    "paths": {
+      "@/": ["./src/scripts/*"],
+      "@styles/": ["./src/styles/*"],
+      "@images/": ["./src/images/*"]
+    },
+    "target": "es2023",
+    "useDefineForClassFields": true,
+    "module": "CommonJS",
+    "lib": ["DOM"],
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
