@@ -16,6 +16,16 @@ $ npm run wp:stop
 ```
 
 - 起動後に管理画面 `Appearance > Themes` から `example` を有効にする  
-http://localhost:8888/wp-admin/themes.php  
+  http://localhost:8888/wp-admin/themes.php
 - トップページに `wordpress/themes/example` のテーマが反映されて `src/` 配下のjs,cssが読み込まれる (HMRで更新される)
 - なお、vite起動中はphpの変更時にlive reloadが実行される
+
+```
+user: admin
+password: password
+```
+
+### Port
+
+- assets (vite) - http://localhost:3000
+- wordpress - http://localhost:8888
