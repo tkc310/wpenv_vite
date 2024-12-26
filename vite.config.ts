@@ -1,9 +1,13 @@
+import sassPlugin from '@csstools/postcss-sass';
+import autoprefixer from 'autoprefixer';
+import { globSync } from 'glob';
+import { fileURLToPath } from 'node:url';
+import { extname, relative, resolve } from 'path';
+import sassSyntax from 'postcss-scss';
+import tailwindcss from 'tailwindcss';
 import { defineConfig, UserConfig } from 'vite';
 import FullReload from 'vite-plugin-full-reload';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { resolve, relative, extname } from 'path';
-import { globSync } from 'glob';
-import { fileURLToPath } from 'node:url';
 
 const root = resolve(__dirname, 'src');
 
@@ -29,6 +33,9 @@ const config = (): UserConfig => ({
     assetsDir: './src',
     emptyOutDir: true,
     manifest: true,
+    watch: {
+      include: ['./wordpress/themes/**/*.php'], // Specify the directory to watch
+    },
     rollupOptions: {
       input: {
         'styles/main.css': 'src/styles/main.scss',
@@ -48,6 +55,12 @@ const config = (): UserConfig => ({
         chunkFileNames: 'scripts/chunk.[name].js',
         assetFileNames: '[name].[ext]',
       },
+    },
+  },
+  css: {
+    postcss: {
+      syntax: sassSyntax,
+      plugins: [sassPlugin(), tailwindcss(), autoprefixer()],
     },
   },
   plugins: [
