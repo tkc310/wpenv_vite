@@ -24,12 +24,13 @@ themes/
 
 https://webgaku.net/jp/wordpress/template-tag/
 
-### よく使う関数
+### 記事周り
 
 - have_posts: 記事の存在判定
 - the_post: 記事データの呼び出し
 - the_permalink: 記事リンク
-- the_post_thumbnail: 記事画像 (imgタグ付き)
+- the_post_thumbnail: 記事画像タグ (imgタグ付き)
+- get_the_post_thumbnail_url: 記事画像URL
 - the_title
 - the_excerpt
 - the_content
