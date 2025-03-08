@@ -25,6 +25,11 @@ user: admin
 password: password
 ```
 
+### Optional
+
+- 管理画面 `Setting > General > Language` を日本語にする
+- 管理画面 `Setting > General > Timezone` を `+9:00` にする
+
 ### Port
 
 - assets (vite) - http://localhost:3000
