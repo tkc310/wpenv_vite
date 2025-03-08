@@ -17,4 +17,13 @@
   <link rel="stylesheet" href="<?php echo $root; ?>/styles/main.<?php echo $css_ext; ?>">
   <script src="<?php echo $root; ?>/scripts/main.<?php echo $js_ext; ?>" type="module"></script>
 </head>
+
+<header class="header">
+  <ul class="h-full flex justify-stretch items-center">
+    <li class="mr-auto text-lg font-bold">example</li>
+    <li>
+      <?php get_search_form(); ?>
+    </li>
+  </ul>
+</header>
 <body>
