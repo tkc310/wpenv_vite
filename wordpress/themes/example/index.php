@@ -25,6 +25,13 @@
     endwhile; ?>
   </ul>
 
+  <?php
+  the_posts_pagination([
+    'type' => 'list',
+  ]);
+  wp_reset_postdata();
+  ?>
+
   <?php else: ?>
     <div>記事がありません</div>
   <?php endif; ?>
