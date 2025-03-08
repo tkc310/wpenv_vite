@@ -7,8 +7,18 @@
     }
   },
   "config": {
-    "IS_DEVELOP": true
+    "IS_DEVELOP": true,
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "WP_DEBUG_DISPLAY": true,
+    "WPMS_ON": true,
+    "WPMS_SMTP_HOST": "mailhog",
+    "WPMS_SMTP_PORT": 1025,
+    "WPMS_MAILER": "smtp"
   },
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/contact-form-7.zip"
+  ],
   "themes": [],
   "mappings": {
     "wp-content/uploads": "./wordpress/uploads",

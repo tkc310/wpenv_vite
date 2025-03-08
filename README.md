@@ -29,8 +29,20 @@ password: password
 
 - 管理画面 `Setting > General > Language` を日本語にする
 - 管理画面 `Setting > General > Timezone` を `+9:00` にする
+- `Adminer & MailHog` の起動
+
+```
+$ docker compose up -d
+```
 
 ### Port
 
 - assets (vite) - http://localhost:3000
 - wordpress - http://localhost:8888
+
+| service       | url                   |
+| ------------- | --------------------- |
+| wordpress     | http://localhost:8888 |
+| vite (assets) | http://localhost:3000 |
+| Adminer       | http://localhost:8080 |
+| MailHog       | http://localhost:8025 |
