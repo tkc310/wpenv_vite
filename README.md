@@ -29,7 +29,7 @@ password: password
 
 - 管理画面 `Setting > General > Language` を日本語にする
 - 管理画面 `Setting > General > Timezone` を `+9:00` にする
-- `Adminer & MailHog` の起動
+- `Adminer & MailHog` の起動 (DBクライアントはドライバが必要なのでローカルはwebツールを利用)
 
 ```
 $ docker compose up -d
