@@ -37,9 +37,6 @@ $ docker compose up -d
 
 ### Port
 
-- assets (vite) - http://localhost:3000
-- wordpress - http://localhost:8888
-
 | service       | url                   |
 | ------------- | --------------------- |
 | wordpress     | http://localhost:8888 |
