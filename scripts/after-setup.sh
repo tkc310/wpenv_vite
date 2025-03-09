@@ -1,4 +1,7 @@
 #!bin/bash
 
-# タイムゾーン変更
-npx wp-env run cli -- wp option update timezone_string 'Asia/Tokyo'
+# タイムゾーン
+npx wp-env run cli -- wp option update timezone_string 'Asia/Tokyo';
+
+# パーマリンク
+npx wp-env run cli -- wp rewrite structure '/%postname%';
