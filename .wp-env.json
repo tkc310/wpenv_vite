@@ -25,7 +25,9 @@
   "plugins": [
     "https://downloads.wordpress.org/plugin/contact-form-7.zip"
   ],
-  "themes": [],
+  "themes": [
+    "./wordpress/themes/example"
+  ],
   "mappings": {
     "wp-content/uploads": "./wordpress/uploads",
     "wp-content/themes": "./wordpress/themes",
