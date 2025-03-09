@@ -28,6 +28,8 @@ $ npm run wp:destroy
 - トップページに `wordpress/themes/example` のテーマが反映されて `src/` 配下のjs,cssが読み込まれる (HMRで更新される)
 - なお、vite起動中はphpの変更時にlive reloadが実行される
 
+**管理画面**
+
 ```
 user: admin
 password: password
@@ -37,17 +39,29 @@ password: password
 
 - 管理画面 `Setting > General > Language` を日本語にする
 - 管理画面 `Setting > General > Timezone` を `+9:00` にする
-- `Adminer & MailHog` の起動 (DBクライアントはドライバが必要なのでローカルはwebツールを利用)
+- `phpMyAdmin & MailHog` の起動 (DBクライアントは[ドライバが必要](https://github.com/WordPress/gutenberg/blob/trunk/docs/contributors/code/getting-started-with-code-contribution.md#accessing-the-mysql-database)なのでローカルはwebツールを利用)
 
 ```
-$ docker compose up -d
+# 起動 (npm run wp:startの後に実行)
+$ sh scripts/docker-up.sh
+
+# 停止
+$ sh scripts/docker-down.sh
+```
+
+**DB**
+
+```
+user: root
+password: password
+database: wordpress
 ```
 
 ### Port
 
 | service       | url                   |
 | ------------- | --------------------- |
-| wordpress     | http://localhost:8888 |
+| wordpress     | http://localhost:3001 |
 | vite (assets) | http://localhost:3000 |
-| Adminer       | http://localhost:8080 |
+| phpMyAdmin    | http://localhost:8080 |
 | MailHog       | http://localhost:8025 |

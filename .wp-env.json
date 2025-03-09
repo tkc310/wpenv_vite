@@ -1,9 +1,9 @@
 {
-  "core": "ssh://git@github.com:WordPress/WordPress.git",
-  "port": 8888,
+  "core": "https://wordpress.org/wordpress-6.7.2.zip",
+  "port": 3001,
   "env": {
     "tests": {
-      "port": 8889
+      "port": 3333
     }
   },
   "config": {
@@ -22,7 +22,7 @@
     "WPMS_MAILER": "smtp"
   },
   "plugins": [
-    "ssh://git@github.com:rocklobster-in/contact-form-7.git"
+    "https://downloads.wordpress.org/plugin/contact-form-7.zip"
   ],
   "themes": [],
   "mappings": {
