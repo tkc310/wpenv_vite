@@ -2,6 +2,8 @@
 
 wordpressの開発環境構築ツール[wp-env](https://github.com/WordPress/gutenberg)で作った環境にviteを入れてtypescript,scssを利用できるようにしたサンプル
 
+[wp-env doc](https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/)
+
 ## Usage
 
 ```
@@ -13,6 +15,12 @@ $ npm run dev
 
 # wordpress停止
 $ npm run wp:stop
+
+# データベースリセット、投稿・ページ・メディアなどが削除される
+$ npm run wp:clean
+
+# dockerコンテナの削除
+$ npm run wp:destroy
 ```
 
 - 起動後に管理画面 `Appearance > Themes` から `example` を有効にする  
