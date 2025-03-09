@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<h2 class="font-bold text-xl">記事一覧</h2>
+<h2 class="font-bold text-xl">お知らせ</h2>
 <div class="foo">
   <p class="bar">hoge</p>
 
   <?php
-  $post_type = ['post_type' => 'post'];
+  $post_type = ['post_type' => 'announces'];
   $post_args = array_merge(
     [
       'numberposts' => 1,
