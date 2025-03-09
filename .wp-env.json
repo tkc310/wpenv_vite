@@ -31,5 +31,8 @@
     "wp-content/themes": "./wordpress/themes",
     "wp-content/plugins": "./wordpress/plugins",
     "sql": "./wordpress/sql"
+  },
+  "lifecycleScripts": {
+    "afterStart": "sh scripts/after-setup.sh"
   }
 }
