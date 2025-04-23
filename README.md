@@ -65,3 +65,12 @@ database: wordpress
 | vite (assets) | http://localhost:3000 |
 | phpMyAdmin    | http://localhost:8080 |
 | MailHog       | http://localhost:8025 |
+
+
+## Refs
+- wp-envドキュメント
+https://ja.wordpress.org/team/handbook/block-editor/reference-guides/packages/packages-env/#wp-envjson
+- wordpressバージョン履歴
+https://wordpress.org/download/releases/
+- wordpress最新バージョン
+https://ja.wordpress.org/latest-ja.zip
